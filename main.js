@@ -728,7 +728,7 @@ function nextFrame(timeStamp) {
         player.spawnTimer -= dt;
         if (player.spawnTimer <= 0) respawn();
       }
-      // triggers
+      /* triggers disabled until i figure out how this works
       if (!player.triggers.includes(-1)) {
         levels[9][5][5] = 0;
         levels[9][5][4] = 0;
@@ -955,7 +955,7 @@ function nextFrame(timeStamp) {
       } else {
         levels[87][22][11] = -4;
         levels[87][22][12] = -4;
-      }
+      }*/
     }
     dt = dt * simReruns;
     // key input
