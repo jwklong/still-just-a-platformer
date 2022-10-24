@@ -1019,7 +1019,7 @@ function openInfo() {
 function newSave() {
   return [
     1,
-    6,
+    10,
     0,
     8,
     325,
@@ -1039,11 +1039,11 @@ function newSave() {
 function save() {
   let saveData = deepCopy(player.spawnPoint);
   if (saveData[5] == Infinity) saveData[5] = "Infinity";
-  localStorage.setItem("just-a-save" + diff, JSON.stringify(saveData));
+  localStorage.setItem("still-just-a-save" + diff, JSON.stringify(saveData));
 }
 function load() {
-  if (localStorage.getItem("just-a-save" + diff)) {
-    let saveData = JSON.parse(localStorage.getItem("just-a-save" + diff));
+  if (localStorage.getItem("still-just-a-save" + diff)) {
+    let saveData = JSON.parse(localStorage.getItem("still-just-a-save" + diff));
     if (saveData[5] == "Infinity") saveData[5] = Infinity;
     if (saveData[8] == undefined) {
       saveData[8] = newSave()[8];
