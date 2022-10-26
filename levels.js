@@ -1,6 +1,6 @@
 const diff = "";
 const worldMap = [
-  [0, 1],
+  [1, 0],
 ];
 const levels = [
   [
