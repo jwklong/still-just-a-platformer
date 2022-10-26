@@ -5,7 +5,7 @@ var player = {
   isDead: false,
   spawnDelay: Math.floor((options.spawnDelay * 100) / 3),
   spawnTimer: Math.floor((options.spawnDelay * 100) / 3),
-  levelCoord: [0, 0],
+  levelCoord: [1, 0],
   get currentLevel() {
     return worldMap[player.levelCoord[0]][player.levelCoord[1]];
   },
@@ -1020,7 +1020,7 @@ function newSave() {
   return [
     1,
     10,
-    0,
+    1,
     0,
     325,
     1,
